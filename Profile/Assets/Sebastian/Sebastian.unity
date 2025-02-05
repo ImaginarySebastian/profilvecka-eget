@@ -133,10 +133,10 @@ GameObject:
   - component: {fileID: 312231807}
   - component: {fileID: 312231806}
   - component: {fileID: 312231805}
-  - component: {fileID: 312231808}
-  - component: {fileID: 312231810}
   - component: {fileID: 312231812}
   - component: {fileID: 312231811}
+  - component: {fileID: 312231808}
+  - component: {fileID: 312231810}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -274,7 +274,7 @@ MonoBehaviour:
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 312231812}
-        m_TargetAssemblyTypeName: PlayerMovement.Movement, Assembly-CSharp
+        m_TargetAssemblyTypeName: Movement.PlayerMovement, Assembly-CSharp
         m_MethodName: JumpInput
         m_Mode: 0
         m_Arguments:
@@ -290,8 +290,8 @@ MonoBehaviour:
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 312231812}
-        m_TargetAssemblyTypeName: PlayerMovement.Movement, Assembly-CSharp
-        m_MethodName: horizontalInput
+        m_TargetAssemblyTypeName: Movement.PlayerMovement, Assembly-CSharp
+        m_MethodName: MoveInput
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -323,7 +323,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 6200000, guid: b509b56a918fcfd4a87eb69949e1d611, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
@@ -344,15 +344,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 312231804}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb6b7d7085b6f80408d94eb910b60dc5, type: 3}
+  m_Script: {fileID: 11500000, guid: d00fdd3de9c5d8f4ba52a0dde3f300ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   GroundLayer:
     serializedVersion: 2
     m_Bits: 256
-  DetectionDistanceY: 0.05
-  TouchingWallDistance: 0.05
-  GrabbingDistance: 1
+  DetectionDistance: 0.05
   TerminalVelocity: 40
   AccelerationWhileFalling: 60
   GroundGravity: -1.5
@@ -360,18 +358,10 @@ MonoBehaviour:
   Acceleration: 120
   OnGroundDeceleration: 60
   InAirDeceleration: 30
-  JumpBufferTime: 0.01
-  CoyoteTime: 0.2
   JumpPower: 30
-  JumpEndEarlyModifier: 3
+  JumpEndedEarlyModifier: 3
   HangInAirThreshold: 0.5
   HangInAirMultiplier: 0.2
-  MaxDoubleJumps: 3
-  DoubleJumpThreshold: 0.5
-  GlideFallSpeed: 10
-  GlideMoveSpeedModifier: 0.25
-  DashTime: 0.25
-  grabBuffer: 0.3
 --- !u!114 &312231812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -381,14 +371,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 312231804}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00b01236108eea24eb89f29cb143891e, type: 3}
+  m_Script: {fileID: 11500000, guid: 1ef41b219c7be6f47bf7c6d170401486, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerCanMove: 1
-  _stats: {fileID: 312231811}
-  collider: {fileID: 312231805}
-  rigidbody: {fileID: 312231810}
-  isFacingRight: 1
+  _settings: {fileID: 312231811}
+  _collider: {fileID: 312231805}
+  _rigidbody: {fileID: 312231810}
 --- !u!1 &751021495
 GameObject:
   m_ObjectHideFlags: 0
