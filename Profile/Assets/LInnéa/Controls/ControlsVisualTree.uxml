@@ -1,0 +1,70 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/LInn%C3%A9a/Meny/MainMenu.uss?fileID=7433441132597879392&amp;guid=0f322067f66534c43b62cd712fa8ce33&amp;type=3#MainMenu" />
+    <ui:VisualElement name="Container" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/SG-grafik/sprites/kletwall.png?fileID=2800000&amp;guid=bade89cb2f77a7940ad52593d282d155&amp;type=3#kletwall&quot;);">
+        <ui:VisualElement name="TopContainer" style="flex-grow: 1; flex-direction: column-reverse; align-items: center;">
+            <ui:Label tabindex="-1" text="Abortion Tools&#10;   Controls" parse-escape-sequences="true" display-tooltip-when-elided="true" name="header" class="header" />
+            <ui:Button text="&#10;" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BackButton2" class="backbutton Button" style="width: 50px; height: 50px; position: absolute; top: 80px; left: 600px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="MiddelContainer" style="flex-grow: 1; flex-direction: row;">
+            <ui:VisualElement name="LeftContaier" style="flex-grow: 1; flex-direction: column; align-items: stretch; justify-content: flex-start;">
+                <ui:VisualElement name="TopLeftContainer" style="flex-grow: 1; align-items: center; justify-content: flex-end; flex-direction: column;">
+                    <ui:Label tabindex="-1" text="Jump" parse-escape-sequences="true" display-tooltip-when-elided="true" name="JumpLabel" class="labels" style="-unity-text-align: upper-center; font-size: 30px; top: 30px; -unity-font-style: normal; -unity-font: url(&quot;project://database/Assets/LInn%C3%A9a/Fonts/DotGothic16/DotGothic16-Regular.ttf?fileID=12800000&amp;guid=b3411212d2e427141ba78b75e0432f07&amp;type=3#DotGothic16-Regular&quot;); right: 5px;" />
+                    <ui:Label tabindex="-1" text="Dash" parse-escape-sequences="true" display-tooltip-when-elided="true" name="DashLabel" class="labels" style="position: absolute; left: 530px; bottom: 78px; font-size: 30px;" />
+                    <ui:VisualElement name="W" style="flex-grow: 0; background-color: rgb(79, 79, 79); width: 70px; height: 70px; margin-top: 30px; margin-right: 30px; margin-bottom: 10px; margin-left: 30px; align-items: center; justify-content: center; position: absolute; left: 500px; bottom: 0;">
+                        <ui:Label tabindex="-1" text="E" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ELabel" class="labels" style="-unity-text-align: middle-center; font-size: 40px; color: rgb(255, 255, 255); width: 43px; height: 42px; align-items: center; bottom: 3px; left: 1.5px; -unity-font-style: normal; -unity-font: url(&quot;project://database/Assets/LInn%C3%A9a/Fonts/DotGothic16/DotGothic16-Regular.ttf?fileID=12800000&amp;guid=b3411212d2e427141ba78b75e0432f07&amp;type=3#DotGothic16-Regular&quot;);" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="W" style="flex-grow: 0; background-color: rgb(79, 79, 79); width: 70px; height: 70px; position: relative; margin-top: 30px; margin-right: 30px; margin-bottom: 10px; margin-left: 30px; align-items: center; justify-content: center; right: 7px;">
+                        <ui:Label tabindex="-1" text="W" parse-escape-sequences="true" display-tooltip-when-elided="true" name="WLabel" class="labels" style="-unity-text-align: middle-center; font-size: 40px; color: rgb(255, 255, 255); width: 43px; height: 42px; align-items: center; bottom: 3px; left: 1.5px; -unity-font-style: normal;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="BottomLeftContainer" style="flex-grow: 1; flex-direction: row;">
+                    <ui:VisualElement name="BottomLeftx2Contariner" style="flex-grow: 1; flex-direction: column; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;">
+                        <ui:Label tabindex="-1" text="Left" parse-escape-sequences="true" display-tooltip-when-elided="true" name="LeftKeyLabel" class="labels" style="font-size: 30px; left: 342px; bottom: 15px;" />
+                        <ui:VisualElement name="A" style="flex-grow: 0; background-color: rgb(79, 79, 79); width: 70px; height: 70px; position: relative; align-items: center; flex-direction: row; justify-content: center; margin-top: 10px; margin-right: 30px; margin-bottom: 30px; margin-left: 30px; right: 0; left: 312px; bottom: 29px;">
+                            <ui:Label tabindex="-1" text="A" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ALabel" class="labels" style="-unity-text-align: middle-center; font-size: 40px; color: rgb(255, 255, 255); bottom: 3px; left: 2px; -unity-font-style: normal;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="BottomLeftRightContainer" style="flex-grow: 1;">
+                        <ui:Label tabindex="-1" text="Right" parse-escape-sequences="true" display-tooltip-when-elided="true" name="RightKeyLabel" class="labels" style="left: 50px; font-size: 30px; bottom: 15px;" />
+                        <ui:VisualElement name="D" style="flex-grow: 0; background-color: rgb(79, 79, 79); width: 70px; height: 70px; position: relative; -unity-font: url(&quot;project://database/Assets/LInn%C3%A9a/Fonts/DotGothic16/DotGothic16-Regular.ttf?fileID=12800000&amp;guid=b3411212d2e427141ba78b75e0432f07&amp;type=3#DotGothic16-Regular&quot;); -unity-font-definition: initial; margin-top: 10px; margin-right: 30px; margin-bottom: 30px; margin-left: 30px; align-items: center; justify-content: center; left: 20px; bottom: 30px;">
+                            <ui:Label tabindex="-1" text="D" parse-escape-sequences="true" display-tooltip-when-elided="true" name="DLabel" class="labels" style="font-size: 40px; -unity-text-align: middle-center; color: rgb(255, 255, 255); bottom: 3px; left: 2px; -unity-font-style: normal;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:Label tabindex="-1" text="Left mouse click to shoot" parse-escape-sequences="true" display-tooltip-when-elided="true" name="LeftClickMouse" class="labels" style="position: absolute; top: 35px; left: 716px;" />
+            <ui:VisualElement name="mouse" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/SG-grafik/sprites/REMYrat_lift.png?fileID=21300000&amp;guid=1da56eb67ac3d644f86c32bb8519019b&amp;type=3#REMYrat_lift&quot;); position: absolute; width: 118px; height: 118px; top: 123px; left: 916px;" />
+            <ui:VisualElement name="RightContaier" style="flex-grow: 1; flex-direction: column; align-items: stretch; justify-content: flex-start;">
+                <ui:VisualElement name="TopRightContainer" style="flex-grow: 1; align-items: center; justify-content: flex-end;">
+                    <ui:Label tabindex="-1" text="Jump" parse-escape-sequences="true" display-tooltip-when-elided="true" name="JumpLabel" class="labels" style="-unity-text-align: upper-center; font-size: 30px; -unity-font-style: normal; -unity-font: url(&quot;project://database/Assets/LInn%C3%A9a/Fonts/DotGothic16/DotGothic16-Regular.ttf?fileID=12800000&amp;guid=b3411212d2e427141ba78b75e0432f07&amp;type=3#DotGothic16-Regular&quot;); bottom: 8px;" />
+                    <ui:VisualElement name="PilUpContainer" style="flex-grow: 0; background-color: rgb(79, 79, 79); width: 70px; height: 70px; position: relative; margin-top: 30px; margin-right: 30px; margin-bottom: 10px; margin-left: 30px; align-items: center; justify-content: center; bottom: 30px;">
+                        <ui:Label tabindex="-1" text="^" parse-escape-sequences="true" display-tooltip-when-elided="true" name="PilUpLabel" class="labels" style="font-size: 50px; color: rgb(255, 255, 255); height: 24px; width: 15px; -unity-text-align: upper-center; align-items: center; justify-content: center; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; top: 0;" />
+                        <ui:Label tabindex="-1" text="|" parse-escape-sequences="true" display-tooltip-when-elided="true" name="PilUpLabel" class="labels" style="-unity-text-align: middle-center; font-size: 40px; color: rgb(255, 255, 255); width: 43px; height: 42px; bottom: 10px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="BottomRightContainer" style="flex-grow: 1; flex-direction: row;">
+                    <ui:VisualElement name="BottomRightLeftContainer" style="flex-grow: 1; flex-direction: row-reverse; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;">
+                        <ui:VisualElement name="PilUpContainer" style="flex-grow: 0; background-color: rgb(79, 79, 79); width: 70px; height: 70px; align-items: center; flex-direction: row; justify-content: center; margin-top: 10px; margin-right: 30px; margin-bottom: 30px; margin-left: 30px; right: 20px; top: 5px;">
+                            <ui:Label tabindex="-1" text="^" parse-escape-sequences="true" display-tooltip-when-elided="true" name="PilLeftLabel" class="labels" style="-unity-text-align: middle-center; font-size: 50px; color: rgb(255, 255, 255); left: 50px; rotate: 270deg;" />
+                            <ui:Label tabindex="-1" text="|" parse-escape-sequences="true" display-tooltip-when-elided="true" name="PilLeftLabel" enable-rich-text="true" class="labels" style="-unity-text-align: middle-center; font-size: 40px; color: rgb(255, 255, 255); rotate: 90deg; top: 1.2px; left: 25px;" />
+                            <ui:Label tabindex="-1" text="Left" parse-escape-sequences="true" display-tooltip-when-elided="true" name="LeftKeyLabel" class="labels" style="font-size: 30px; bottom: 55px; right: 30px;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="BottomRightX2Container" style="flex-grow: 1;">
+                        <ui:VisualElement name="PilRightContaier" style="flex-grow: 0; background-color: rgb(79, 79, 79); width: 70px; height: 70px; position: relative; -unity-font: url(&quot;project://database/Assets/LInn%C3%A9a/Fonts/DotGothic16/DotGothic16-Regular.ttf?fileID=12800000&amp;guid=b3411212d2e427141ba78b75e0432f07&amp;type=3#DotGothic16-Regular&quot;); -unity-font-definition: initial; margin-top: 10px; margin-right: 30px; margin-bottom: 30px; margin-left: 30px; left: 20px; top: 5px;">
+                            <ui:Label tabindex="-1" text="Right" parse-escape-sequences="true" display-tooltip-when-elided="true" name="RightKeyLabel" class="labels" style="font-size: 30px; bottom: 50px;" />
+                            <ui:Label tabindex="-1" text="^" parse-escape-sequences="true" display-tooltip-when-elided="true" name="PilRightLabel" class="labels" style="font-size: 50px; -unity-text-align: middle-center; color: rgb(255, 255, 255); rotate: 90deg; left: 2px; bottom: 57.5px;" />
+                            <ui:Label tabindex="-1" text="|" parse-escape-sequences="true" display-tooltip-when-elided="true" name="PilLeftLabel" enable-rich-text="true" class="labels" style="-unity-text-align: middle-center; font-size: 40px; color: rgb(255, 255, 255); rotate: 90deg; bottom: 127px; right: -0.75px;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="BottomContainer" style="flex-grow: 1; flex-direction: column; align-items: center;">
+            <ui:Label tabindex="-1" text="Jump" parse-escape-sequences="true" display-tooltip-when-elided="true" name="JumpLabel" class="labels" style="font-size: 30px;" />
+            <ui:VisualElement name="Space" style="flex-grow: 0; flex-direction: column; width: 450px; height: 70px; background-color: rgb(79, 79, 79); align-items: flex-start; justify-content: center; right: 0;">
+                <ui:Label tabindex="-1" text="Space" parse-escape-sequences="true" display-tooltip-when-elided="true" class="labels" style="left: 20px; color: rgb(255, 255, 255);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

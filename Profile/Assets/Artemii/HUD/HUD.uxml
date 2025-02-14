@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Artemii/HUD.uss?fileID=7433441132597879392&amp;guid=440638bf0d2c4cb488d1e4447bd71ae1&amp;type=3#HUD" />
+    <ui:VisualElement name="Top" style="flex-grow: 1; flex-direction: row;">
+        <ui:VisualElement name="TopLeftContainer" style="flex-grow: 1;">
+            <ui:VisualElement name="HealthContainer" style="flex-grow: 1; flex-direction: row;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="TopRightContainer" style="flex-grow: 1;" />
+    </ui:VisualElement>
+    <ui:VisualElement name="BottomContainer" style="flex-grow: 1; flex-direction: row;">
+        <ui:VisualElement name="BottomLeftContainer" style="flex-grow: 1;" />
+        <ui:VisualElement name="BottomRightContainer" style="flex-grow: 1;" />
+    </ui:VisualElement>
+</ui:UXML>

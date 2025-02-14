@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="MenyVisualTree" src="project://database/Assets/LInn%C3%A9a/Meny/MenyVisualTree.uxml?fileID=9197481963319205126&amp;guid=a8e6b044883c51749bd3aaf8a36e37b5&amp;type=3#MenyVisualTree" />
+    <ui:Template name="SettingsVisualTree" src="project://database/Assets/LInn%C3%A9a/Settings/SettingsVisualTree.uxml?fileID=9197481963319205126&amp;guid=9a6e697c53492c944bd89e2d18c8fabc&amp;type=3#SettingsVisualTree" />
+    <ui:Template name="ControlsVisualTree" src="project://database/Assets/LInn%C3%A9a/Controls/ControlsVisualTree.uxml?fileID=9197481963319205126&amp;guid=9798b4392717ac0409442c12e00b1b62&amp;type=3#ControlsVisualTree" />
+    <ui:Template name="ExitVisualTree" src="project://database/Assets/LInn%C3%A9a/Exit/ExitVisualTree.uxml?fileID=9197481963319205126&amp;guid=6eab3a731ca4be14283de425f55d68b3&amp;type=3#ExitVisualTree" />
+    <ui:Template name="StartVisualTree" src="project://database/Assets/LInn%C3%A9a/Start/StartVisualTree.uxml?fileID=9197481963319205126&amp;guid=334d2e7437509fa4fba6aa07421b59b1&amp;type=3#StartVisualTree" />
+    <ui:Instance template="MenyVisualTree" name="MenyVisualTree" style="width: 100%; height: 100%; position: absolute;" />
+    <ui:Instance template="SettingsVisualTree" name="SettingsVisualTree" style="width: 100%; height: 100%; position: absolute; display: none;" />
+    <ui:Instance template="ControlsVisualTree" name="ControlsVisualTree" style="width: 100%; height: 100%; position: absolute; display: none;" />
+    <ui:Instance template="ExitVisualTree" name="ExitVisualTree" style="display: none; width: 100%; height: 100%; position: absolute;" />
+    <ui:Instance template="StartVisualTree" name="StartVisualTree" style="width: 100%; height: 100%; position: absolute; display: none;" />
+</ui:UXML>

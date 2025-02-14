@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/LInn%C3%A9a/Meny/MainMenu.uss?fileID=7433441132597879392&amp;guid=0f322067f66534c43b62cd712fa8ce33&amp;type=3#MainMenu" />
+    <ui:VisualElement name="Container" style="flex-grow: 1; align-items: center; align-self: auto; justify-content: flex-start; background-image: url(&quot;project://database/Assets/LInn%C3%A9a/Sprites/kletwall.png?fileID=2800000&amp;guid=4f57d25a4dc7b4045bb269764255c5ab&amp;type=3#kletwall&quot;);">
+        <ui:Label tabindex="-1" text="Abortion clinic" parse-escape-sequences="true" display-tooltip-when-elided="true" name="header" class="header" style="-unity-font-style: normal;" />
+        <ui:Button text="Start abortion" parse-escape-sequences="true" display-tooltip-when-elided="true" name="StartButton" class="button Button" />
+        <ui:Button text="Settings" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SettingsButton" class="button Button" />
+        <ui:Button text="Abortion tools" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ControlsButton" class="button Button" />
+        <ui:Button text="Exit abortion" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ExitButton" class="button Button" />
+    </ui:VisualElement>
+</ui:UXML>

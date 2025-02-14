@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace Movement
+namespace PlayerScript
 {
     public class PlayerMovement : MonoBehaviour
     {
@@ -12,37 +12,40 @@ namespace Movement
         [SerializeField] new private Rigidbody2D _rigidbody;
 
         /*Variabler*/
-        private bool _isFacingRight = true;
+        public bool _isFacingRight = true;
 
         /*hoppa*/
 
         private bool _jumpEndedEarly;
         private bool _pressedJump;
         private bool _grounded;
+        internal int doubleJumps;
         private float _horizontal;
+        private bool _hasReleasedForDouble;
         private Vector2 _movementVelocity;
 
 
 
-#region Input
+    #region Input
 
-        public void JumpInput(InputAction.CallbackContext context)
-        {
-            if (context.performed)
+            public void JumpInput(InputAction.CallbackContext context)
             {
-                _pressedJump = true;
+                if (context.performed)
+                {
+                    _pressedJump = true;
+                }
+                else if (context.canceled)
+                {
+                    _pressedJump = false;
+                if (!_grounded) _hasReleasedForDouble = true;
+                }
             }
-            else if (context.canceled)
+            public void MoveInput(InputAction.CallbackContext context)
             {
-                _pressedJump = false;
+                _horizontal = context.ReadValue<Vector2>().x;
             }
-        }
-        public void MoveInput(InputAction.CallbackContext context)
-        {
-            _horizontal = context.ReadValue<Vector2>().x;
-        }
 
-#endregion
+    #endregion
 
         void Update()
         {
@@ -72,6 +75,7 @@ namespace Movement
             {
                 _grounded = true;
                 _jumpEndedEarly = false;
+                _hasReleasedForDouble = false;
             }
             else if (_grounded && !groundHit)
             {
@@ -118,6 +122,11 @@ namespace Movement
                 _jumpEndedEarly = true;
             }
             if(AllowJump) Jump();
+            if(doubleJumps > 0 && _pressedJump && _hasReleasedForDouble)
+            {
+                doubleJumps--;
+                Jump();
+            }
 
         }
 
@@ -154,6 +163,7 @@ namespace Movement
         }
 
 #endregion
+
 
         void Move()
         {

@@ -5,24 +5,30 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - Restorsanity
+  - Wall
+  - Bullet
+  - Hinder
+  - EnemyBullet
+  - Lava
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Player
+  - Bullet
   - Water
   - UI
-  - Enemy
-  - 
+  - Player
   - Ground
+  - Enemy
+  - Hinder
+  - EnemyBullet
   - 
   - 
   - 
   - 
   - 
-  - 
-  - 
-  - 
+  - Lava
   - 
   - 
   - 
@@ -39,6 +45,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 3617378069
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Level
+    uniqueID: 2234082459
     locked: 0

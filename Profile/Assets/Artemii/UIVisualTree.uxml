@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="HUD" src="project://database/Assets/Artemii/HUD/HUD.uxml?fileID=9197481963319205126&amp;guid=a4ef62efb4a36364caf7f206fa52ffbd&amp;type=3#HUD" />
+    <ui:Template name="UIVisualTreePaus" src="project://database/Assets/LInn%C3%A9a/UIVisualTreePaus.uxml?fileID=9197481963319205126&amp;guid=e6589acf6819b6c4fbe1baf6c9d3ae52&amp;type=3#UIVisualTreePaus" />
+    <ui:Instance template="HUD" name="HUD" style="width: 100%; height: 100%; display: flex;" />
+    <ui:Instance template="UIVisualTreePaus" name="UIVisualTreePaus" style="width: 100%; height: 100%; display: none;" />
+</ui:UXML>

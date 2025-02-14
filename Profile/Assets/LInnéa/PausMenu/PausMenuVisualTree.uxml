@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/LInn%C3%A9a/Meny/MainMenu.uss?fileID=7433441132597879392&amp;guid=0f322067f66534c43b62cd712fa8ce33&amp;type=3#MainMenu" />
+    <ui:VisualElement name="Container" style="flex-grow: 1; align-items: center;">
+        <ui:VisualElement name="PausMenuBackground" class="pausmenucontainer">
+            <ui:Label tabindex="-1" text="Pause" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Header" class="header" style="height: 69px;" />
+            <ui:Button text="Resume abortion" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ContinueButton" class="SmalerButton Button" />
+            <ui:Button text="Settings" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SettingsButton2" class="Button button SmalerButton" />
+            <ui:Button text="Abortion tools" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ControlsButton2" class="button Button SmalerButton" />
+            <ui:Button text="Exit abortion" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ExitAbortion2" class="SmalerButton Button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

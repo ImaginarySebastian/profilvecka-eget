@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Elida/Sanity.uss?fileID=7433441132597879392&amp;guid=8cd233e61c8412c4a848914a72f9e23d&amp;type=3#Sanity" />
+    <ui:VisualElement name="Container" style="flex-grow: 1;">
+        <ui:ProgressBar value="22" name="SanityMeter" style="width: 300px; height: 70px; position: absolute; top: 19px; left: 0;" />
+    </ui:VisualElement>
+</ui:UXML>

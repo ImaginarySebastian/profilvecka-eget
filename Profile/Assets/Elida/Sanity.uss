@@ -1,0 +1,11 @@
+#SanityMeter .unity-progress-bar__background {
+    background-color: rgb(0, 0, 0);
+}
+
+#SanityMeter .unity-progress-bar__progress {
+    background-color: rgb(151, 0, 0);
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    border-bottom-left-radius: 9px;
+}

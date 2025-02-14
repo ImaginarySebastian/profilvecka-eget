@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/LInn%C3%A9a/Meny/MainMenu.uss?fileID=7433441132597879392&amp;guid=0f322067f66534c43b62cd712fa8ce33&amp;type=3#MainMenu" />
+    <ui:VisualElement name="Container" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/LInn%C3%A9a/Sprites/kletwall.png?fileID=2800000&amp;guid=4f57d25a4dc7b4045bb269764255c5ab&amp;type=3#kletwall&quot;);">
+        <ui:VisualElement name="TopContainer" style="flex-grow: 1; height: -4px; align-items: center; justify-content: center;">
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="BackButton3" class="backbutton Button" style="right: 500px;" />
+            <ui:Label tabindex="-1" text="Are you ready to start abortion?" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ReadyLabel" class="header" />
+            <ui:Label tabindex="-1" text="Choose level!" parse-escape-sequences="true" display-tooltip-when-elided="true" name="LevelLabel" class="labels" style="align-items: center;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="BottomContainer" style="flex-grow: 1; flex-direction: row; justify-content: center;">
+            <ui:Button text="1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Level1" class="levelbutton Button" />
+            <ui:Button text="2" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Level2" class="levelbutton Button" />
+            <ui:Button text="3" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Level3" class="levelbutton Button" />
+        </ui:VisualElement>
+        <ui:VisualElement name="LastContainer" style="flex-grow: 1; align-items: center;">
+            <ui:Button text="The end" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BossLevel" class="levelbutton Button" style="width: 256px; height: 256px; bottom: 100px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

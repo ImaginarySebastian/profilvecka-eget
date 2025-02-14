@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="PausMenuVisualTree" src="project://database/Assets/LInn%C3%A9a/PausMenu/PausMenuVisualTree.uxml?fileID=9197481963319205126&amp;guid=d32491bb3565fc34abd6cb5c13612051&amp;type=3#PausMenuVisualTree" />
+    <ui:Template name="PausSettingsVisualTree" src="project://database/Assets/LInn%C3%A9a/paus%20settings/PausSettingsVisualTree.uxml?fileID=9197481963319205126&amp;guid=f2371dac0ec6a2f45b5799e13098fc03&amp;type=3#PausSettingsVisualTree" />
+    <ui:Template name="PausControlsVisualTree" src="project://database/Assets/LInn%C3%A9a/PausControls/PausControlsVisualTree.uxml?fileID=9197481963319205126&amp;guid=20fb8e391b6f2fb49bdb2455d726f004&amp;type=3#PausControlsVisualTree" />
+    <ui:Template name="PausExitVisualTree" src="project://database/Assets/LInn%C3%A9a/paus%20exit/PausExitVisualTree.uxml?fileID=9197481963319205126&amp;guid=ff19f2cfb5ad1794a9974d061acb07a0&amp;type=3#PausExitVisualTree" />
+    <ui:Instance template="PausMenuVisualTree" name="PausMenuVisualTree" style="position: absolute; width: 100%; height: 100%;" />
+    <ui:Instance template="PausSettingsVisualTree" name="PausSettingsVisualTree" style="width: 100%; height: 100%; position: absolute; display: none;" />
+    <ui:Instance template="PausControlsVisualTree" name="PausControlsVisualTree" style="position: absolute; width: 100%; height: 100%; display: none;" />
+    <ui:Instance template="PausExitVisualTree" name="PausExitVisualTree" style="width: 100%; height: 100%; position: absolute; display: none;" />
+</ui:UXML>

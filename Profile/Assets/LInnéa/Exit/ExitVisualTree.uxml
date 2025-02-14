@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/LInn%C3%A9a/Meny/MainMenu.uss?fileID=7433441132597879392&amp;guid=0f322067f66534c43b62cd712fa8ce33&amp;type=3#MainMenu" />
+    <ui:VisualElement name="Container" style="flex-grow: 1; align-items: center; justify-content: flex-start; background-image: url(&quot;project://database/Assets/LInn%C3%A9a/Sprites/kletwall.png?fileID=2800000&amp;guid=4f57d25a4dc7b4045bb269764255c5ab&amp;type=3#kletwall&quot;);">
+        <ui:Label tabindex="-1" text="Exit Abortion&#10;" parse-escape-sequences="true" display-tooltip-when-elided="true" name="header" class="header" />
+        <ui:Label tabindex="-1" text="Are you sure you want to exit the game?" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SureOrNotLabel" class="labels" />
+        <ui:VisualElement name="BottomContainer" style="flex-grow: 1; flex-direction: row;">
+            <ui:VisualElement name="LeftBottomContainer" style="flex-grow: 1; align-items: flex-end;">
+                <ui:Button text="Yes" parse-escape-sequences="true" display-tooltip-when-elided="true" name="YesButton" class="button Button" style="-unity-font: url(&quot;project://database/Assets/LInn%C3%A9a/Fonts/DotGothic16/DotGothic16-Regular.ttf?fileID=12800000&amp;guid=b3411212d2e427141ba78b75e0432f07&amp;type=3#DotGothic16-Regular&quot;); -unity-font-definition: initial; margin-top: 70px; margin-right: 200px; margin-bottom: 0; margin-left: 0; font-size: 40px; background-image: url(&quot;project://database/Assets/SG-grafik/sprites/button_fixed.png?fileID=1549214608&amp;guid=f91ca7407d3423046ab3315eb0fe9555&amp;type=3#button_fixed_0&quot;); background-color: rgba(188, 188, 188, 0); border-left-color: rgba(149, 149, 149, 0); border-right-color: rgba(149, 149, 149, 0); border-top-color: rgba(149, 149, 149, 0); border-bottom-color: rgba(149, 149, 149, 0); width: 200px; height: 128px;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="RightBottomContainer" style="flex-grow: 1;">
+                <ui:Button text="No" parse-escape-sequences="true" display-tooltip-when-elided="true" name="NoButton" class="button Button" style="font-size: 40px; -unity-font: url(&quot;project://database/Assets/LInn%C3%A9a/Fonts/DotGothic16/DotGothic16-Regular.ttf?fileID=12800000&amp;guid=b3411212d2e427141ba78b75e0432f07&amp;type=3#DotGothic16-Regular&quot;); -unity-font-definition: initial; width: 200px; height: 128px; margin-top: 70px; margin-right: 0; margin-bottom: 0; margin-left: 200px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="CryingCat" style="flex-grow: 0; background-image: url(&quot;project://database/Assets/SG-grafik/sprites/characterplayer_cry.png?fileID=21300000&amp;guid=fc8d8b64a90925d4b92f3bf302e0d866&amp;type=3#characterplayer_cry&quot;); position: relative; width: 512px; height: 512px; -unity-background-image-tint-color: rgb(255, 255, 255); flex-shrink: 1;" />
+    </ui:VisualElement>
+</ui:UXML>
